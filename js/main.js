@@ -1,4 +1,4 @@
 function toggleNavbar() {
-  document.getElementById('navbar').classList.toggle('visible');
+  document.getElementById('menu').classList.toggle('visible');
   return false;
 }

@@ -1,10 +1,21 @@
 <nav id="navbar">
-  <ul>
-    <li id="navbar-brand"><a href="/"><img src="images/logo.png" alt="Footing-club logo" id="logo"></a></li>
+  <div id="logo">
+    <a href="{{ '/' | relative_url }}">
+      <img src="images/logo.png" alt="Footing-club logo" id="logo">
+    </a>
+  </div>
+
+  <ul id="menu">
     <li><a href="about">Le club</a></li>
     <li><a href="news">Actualités</a></li>
+    <li class="spacer"></li>
     <li><a href="workouts">Entraînements</a></li>
     <li><a href="register">Inscription</a></li>
-    <li id="navbar-toggler"><a href="#" onclick="return toggleNavbar()"><i class="fas fa-bars"></i></a></li>
   </ul>
+
+  <div id="navbar-toggler">
+    <a href="#" onclick="return toggleNavbar()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
 </nav>
