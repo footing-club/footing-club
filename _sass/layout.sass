@@ -31,11 +31,14 @@
     li
       display: block
 
+    #navbar-brand
+      margin-bottom: 45px
+
   a
     color: #333
     display: block
-    height: 65px
-    line-height: 65px
+    height: 75px
+    line-height: 75px
     text-decoration: none
     font-weight: 500
 
@@ -51,13 +54,24 @@
     background-color: $primary-color
     display: block
 
-    a
-      color: #fff
-      height: 45px
-      line-height: 45px
-
     +tablet
       order: 1
+
+    a
+      color: #fff
+      height: 55px
+      line-height: 55px
+
+      +tablet
+        height: 45px
+        line-height: 45px
+
+    img
+      height: 95px
+      z-index: 1
+
+      +tablet
+        height: 80px
 
   #navbar-toggler
     display: block
@@ -68,9 +82,10 @@
     a
       color: #fff
       border-radius: 4px
-      height: 35px
-      width: 35px
-      line-height: 35px
+      height: 45px
+      width: 45px
+      line-height: 45px
+      font-size: 22px
 
       &:hover
         background-color: rgba(255, 255, 255, .1)
