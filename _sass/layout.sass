@@ -2,11 +2,19 @@
 // ----------------------------------------------------------------------------
 
 #navbar
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+
+  +tablet
+    position: static
 
   ul
     display: flex
     flex-direction: column
     box-shadow: 1px 1px 8px #333
+    background-color: #fff
 
     +tablet
       flex-direction: row
@@ -33,6 +41,9 @@
 
     #navbar-brand
       margin-bottom: 45px
+
+      +tablet
+        margin-bottom: 0
 
   a
     color: #333
@@ -78,6 +89,7 @@
     position: absolute
     right: 0
     padding: 5px 1em
+    background-color: $primary-color
 
     a
       color: #fff
