@@ -15,8 +15,11 @@
   <title>{{ site.title }}</title>
 </head>
 <body>
+  {% include navbar.html %}
 
   {{ content }}
 
+  <!-- JavaScript -->
+  <script src="{{ 'js/main.js' | relative_url }}"></script>
 </body>
 </html>
