@@ -8,6 +8,7 @@
   left: 0
   right: 0
   height: 55px
+  z-index: 2
 
   +tablet
     position: static
@@ -70,7 +71,7 @@
       &:hover
         text-decoration: underline
 
-#navbar-toggler
+#menu-toggler
   display: flex
   justify-content: flex-end
   position: absolute
@@ -94,3 +95,20 @@
 
   +tablet
     display: none
+
+#menu-backdrop
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1
+  width: 100vw
+  height: 100vh
+  background-color: #000
+  opacity: 0
+  transition: opacity 0.3s
+
+  +tablet
+    display: none
+
+  &.visible
+    opacity: 0.5
