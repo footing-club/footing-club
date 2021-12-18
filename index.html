@@ -3,7 +3,13 @@ layout: default
 ---
 
 <section class="hero">
-  <div class="hero-body">
-    <h1 class="hero-title">Footing-club <em>Lausanne</em></h1>
-  </div>
+  <img class="hero-img" src="images/hero-bg.jpg" alt="">
+  <h1 class="hero-title">Footing-club <em>Lausanne</em></h1>
 </section>
+
+
+{% for i in (1..10) %}
+  <p style="padding: 30px 50px; background-color: #fff">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa doloremque molestias nam quod? Cum dolor id ipsum iure magni nesciunt officia ratione rem ullam voluptas? Doloribus minima saepe ut?
+  </p>
+{% endfor %}

@@ -1,7 +1,5 @@
 .hero
-  background: url("../images/hero-bg.jpg") no-repeat center center / cover
-
-.hero-body
+  position: relative
   background: url("../images/hero-bottom.png") repeat-x bottom center
   height: 350px
   display: flex
@@ -11,38 +9,46 @@
   +tablet
     height: 450px
 
-.hero-title
-  color: #fff
-  text-transform: uppercase
-  font-size: 45px
-  font-weight: bold
-  letter-spacing: -3px
-  text-shadow: 2px 2px 8px #333
-  max-width: 450px
-  height: 170px
-  line-height: 80px
-  padding: 0 35px
-  text-align: center
-  background: url("../images/hero-title-trash-sm.png") no-repeat bottom center
-  position: relative
-  top: -30px
-
-  +tablet
-    font-size: 59px
-    max-width: none
-    height: 123px
-    line-height: 123px
-    background: url("../images/hero-title-trash.png") no-repeat right center
-
-  em
-    font-style: normal
-    color: $primary-color
-
-  &:after
-    content: ''
+  img
     position: absolute
-    bottom: -30px
-    left: 40%
-    width: 20%
-    border-bottom: 5px solid #fff
-    box-shadow: 2px 2px 8px #333
+    top: -8px
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -1
+
+  h1
+    color: #fff
+    text-transform: uppercase
+    font-size: 45px
+    font-weight: bold
+    letter-spacing: -3px
+    text-shadow: 2px 2px 8px #333
+    max-width: 450px
+    height: 170px
+    line-height: 80px
+    padding: 0 35px
+    text-align: center
+    background: url("../images/hero-title-trash-sm.png") no-repeat bottom center
+    position: relative
+    top: -30px
+
+    +tablet
+      font-size: 59px
+      max-width: none
+      height: 123px
+      line-height: 123px
+      background: url("../images/hero-title-trash.png") no-repeat right center
+
+    em
+      font-style: normal
+      color: $primary-color
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: -30px
+      left: 40%
+      width: 20%
+      border-bottom: 5px solid #fff
+      box-shadow: 2px 2px 8px #333

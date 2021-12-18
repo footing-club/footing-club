@@ -1,3 +1,4 @@
+// Navbar - Menu off canvas
 function toggleMenu() {
   let menu = document.getElementById('menu');
 
@@ -21,3 +22,9 @@ function toggleMenu() {
 
   return false;
 }
+
+// Hero - Parallax effect
+window.addEventListener('scroll', function() {
+  const distance = window.scrollY
+  document.querySelector('.hero img').style.transform = `translateY(${distance * 0.2}px)`
+})
