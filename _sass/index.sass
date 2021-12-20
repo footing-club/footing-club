@@ -10,7 +10,7 @@
     flex-direction: row
 
 #workouts
-  margin: 16px
+  margin: 0 8px 16px 8px
   background: #e55244
   padding: 24px
   box-shadow: 2px 2px 8px #ddd
@@ -18,18 +18,22 @@
   background: $primary-color url("../images/workouts-bg.jpg") no-repeat center center / cover
 
   +tablet
+    margin: 8px 16px
     flex-basis: 350px
 
   li
     margin-bottom: 16px
 
 #news
-  margin: 16px
+  margin: 16px 8px
   background: #ccc
   flex-grow: 1
   padding: 16px
   box-shadow: 2px 2px 8px #ddd
   background: url("../images/news-bg.jpg") no-repeat center center / cover
+
+  +tablet
+    margin: 8px 16px
 
   li
     line-height: 30px
