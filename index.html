@@ -44,13 +44,11 @@ layout: default
       Actualités
     </h2>
     <ul>
-      <li>02.12.2021 : Les infos sur le <a href="#">sapin de Noël du Footing-club</a> (21 décembre)</li>
-      <li>20.11.2021 : Les <a href="#">mérites</a> 2021</li>
-      <li>07.11.2021 : Le Footing-club Lausanne sur <a href="#">Instagram</a></li>
-      <li>05.11.2021 : Les informations sur le <a href="#">week-end de ski de fond</a> (22 - 23 janvier 2022)</li>
-      <li>25.08.2021 : Le <a href="#">plan d'entraînement de l'automne</a></li>
-      <li>03.08.2021 : <a href="#">Tenues du Footing-club Lausanne</a></li>
-      <li>04.08.2021 : <a href="#">Coordonnées de physiothérapie</a></li>
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
     </ul>
   </section>
 </div>
