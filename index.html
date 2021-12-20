@@ -13,23 +13,24 @@ layout: default
 
 <div id="infos">
   <section id="workouts">
-    <h2 class="title">
+    {% assign week = site.time | date: '%W' | to_integer %}
+
+    <h2 class="title" title="Semaine {{ week }}">
       <span class="icon"><i class="far fa-calendar-alt"></i></span>
       Cette semaine
     </h2>
     <ul>
+      {% for workout in site.data.workouts[week] %}
       <li>
-        <small>Mardi 14 Décembre - Chalet-à-Gobet</small><br>
-        Endurance 1h15'
+        <small>
+          <strong>{{ workout.date }}</strong> - {{ workout.location }}
+          {% unless workout.location contains "Gobet" or workout.location contains "Coubertin" %}
+          <i class="fas fa-exclamation-triangle"></i>
+          {% endunless %}
+        </small><br>
+        {{ workout.title }}
       </li>
-      <li>
-        <small>Jeudi 16 Décembre - Ouchy <i class="fas fa-exclamation-triangle"></i></small><br>
-        Ouchy - St. François - Ouchy
-      </li>
-      <li>
-        <small>Samedi 18 Décembre - Vidy, Coubertin</small><br>
-        -
-      </li>
+      {% endfor %}
     </ul>
 
     <p>
