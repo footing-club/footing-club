@@ -3,37 +3,47 @@
   flex-direction: column
   background: #fff
   padding: 0 16px
-  max-width: 1200px
   margin: 0 auto
 
   +tablet
+    padding: 0 32px 32px 32px
+
+  +desktop
     flex-direction: row
 
 #workouts
-  margin: 0 8px 16px 8px
+  margin-bottom: 24px
   background: #e55244
   padding: 24px
   box-shadow: 2px 2px 8px #ddd
   color: #fff
   background: $primary-color url("../images/workouts-bg.jpg") no-repeat center center / cover
+  font-size: 14px
 
   +tablet
-    margin: 8px 16px
-    flex-basis: 350px
+    padding: 32px
+
+  +desktop
+    margin-right: 16px
+    margin-bottom: 0
+    padding: 24px
+    flex-basis: 450px
 
   li
     margin-bottom: 16px
 
 #news
-  margin: 16px 8px
   background: #ccc
   flex-grow: 1
-  padding: 16px
+  padding: 24px
   box-shadow: 2px 2px 8px #ddd
   background: url("../images/news-bg.jpg") no-repeat center center / cover
 
   +tablet
-    margin: 8px 16px
+    padding: 32px
+
+  +desktop
+    padding: 24px
 
   li
     line-height: 30px
