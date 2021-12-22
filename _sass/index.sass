@@ -104,7 +104,7 @@ a
 
   p
     line-height: 30px
-    margin: 0 30px 20px 30px
+    margin: 0 0 20px 0
     text-align: center
 
     +desktop
@@ -126,9 +126,37 @@ a
     box-shadow: 2px 2px 8px #333
     display: block
     margin: 10px auto
+    max-width: 90%
 
     +tablet
       width: 320px
 
     +desktop
       width: 350px
+
+
+// Facts
+// ----------------------------------------------------------------------------
+
+#facts
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  vertical-align: center
+  text-align: center
+
+  +tablet
+    flex-direction: row
+
+  .fact
+    margin: 20px 0
+
+    +tablet
+      margin: 40px 0
+
+  .fact-data
+    font-size: 50px
+    font-weight: bold
+    color: $primary-color
+    line-height: 1
