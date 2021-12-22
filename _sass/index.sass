@@ -1,25 +1,15 @@
-// Infos
+// Infos (planning & news)
 // ----------------------------------------------------------------------------
 
 #infos
   display: flex
   flex-direction: column
-  background: #fff
-  padding: 0 16px
-  margin: 0 auto
-  font-size: 14px
-
-  +tablet
-    padding: 0 32px 32px 32px
 
   +desktop
     flex-direction: row
 
-
-// Planning
-// ----------------------------------------------------------------------------
-
-#planning
+#infos-planning
+  font-size: 14px
   margin-bottom: 24px
   background: #e55244
   padding: 24px
@@ -39,11 +29,8 @@
   li
     margin-bottom: 16px
 
-
-// News
-// ----------------------------------------------------------------------------
-
-#news
+#infos-news
+  font-size: 14px
   background: #ccc
   flex-grow: 1
   padding: 24px
@@ -75,62 +62,3 @@
 a
   color: #fff
 
-
-// About
-// ----------------------------------------------------------------------------
-
-#about
-  display: flex
-  justify-content: space-around
-  padding: 30px 0
-
-  #about-text
-    width: 45%
-    color: #333
-    padding: 0 40px
-    line-height: 30px
-
-    h2
-      font-size: 40px
-      color: #333
-      text-align: center
-      background: url("../images/trash-bg-sm.png") no-repeat center
-      width: 211px
-      height: 118px
-      line-height: 90px
-      margin: 0 auto 18px auto
-      text-transform: uppercase
-      font-weight: bold
-      position: relative
-      letter-spacing: -1px
-
-      &:after
-        content: ''
-        position: absolute
-        bottom: 30px
-        left: 35%
-        width: 30%
-        border-bottom: 3px solid $primary-color
-        box-shadow: 2px 2px 8px #666
-
-    p
-      margin-bottom: 25px
-
-    a
-      color: $primary-color
-      font-weight: bold
-
-  #about-img
-    width: 43%
-    min-width: 500px
-    flex-shrink: 0
-    text-align: center
-    background-image: url("../images/trash-red.png")
-    background-repeat: no-repeat
-    background-size: contain
-    padding: 20px 0
-
-    img
-      width: 350px
-      border: solid 8px #fff
-      box-shadow: 2px 2px 8px #333

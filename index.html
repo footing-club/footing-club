@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- Hero -->
 <section class="hero">
   <div class="hero-img">
     <img src="images/home-slide-1.jpg" alt="" class="img-slide">
@@ -10,10 +11,12 @@ layout: default
   </div>
   <h1 class="hero-title">Footing-club <em>Lausanne</em></h1>
 </section>
+<!-- /Hero -->
 
+<!-- Infos -->
 <div class="has-background-white">
   <div id="infos" class="container">
-    <section id="planning">
+    <section id="infos-planning">
       {% assign week = site.time | date: '%W' | to_integer %}
       {% assign year = site.time | date: '%Y' %}
       {% assign file = year | append: '-planning' %}
@@ -48,7 +51,7 @@ layout: default
       </ul>
     </section>
 
-    <section id="news">
+    <section id="infos-news">
       <h2 class="title">
         <span class="icon"><i class="fas fa-bullhorn"></i></span>
         Actualités
@@ -63,4 +66,5 @@ layout: default
     </section>
   </div>
 </div>
+<!-- /Infos -->
 
