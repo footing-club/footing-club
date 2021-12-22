@@ -4,6 +4,7 @@
 #infos
   display: flex
   flex-direction: column
+  margin-bottom: 30px
 
   +desktop
     flex-direction: row
@@ -62,3 +63,72 @@
 a
   color: #fff
 
+
+// Club
+// ----------------------------------------------------------------------------
+
+#club
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  +tablet
+    flex-direction: row
+
+#club-text
+  flex-grow: 1
+  flex-basis: 0
+
+  h2
+    font-size: 40px
+    color: #333
+    text-align: center
+    background: url("../images/trash-bg-sm.png") no-repeat center
+    width: 211px
+    height: 118px
+    line-height: 100px
+    margin: 0 auto 16px auto
+    text-transform: uppercase
+    font-weight: bold
+    position: relative
+    letter-spacing: -1px
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 30px
+      left: 35%
+      width: 30%
+      border-bottom: 3px solid $primary-color
+      box-shadow: 2px 2px 8px #666
+
+  p
+    line-height: 30px
+    margin: 0 30px 20px 30px
+    text-align: center
+
+    +desktop
+      margin: 25px 60px
+
+  a
+    color: $primary-color
+    font-weight: bold
+
+#club-img
+  background: url("../images/trash-red.png") no-repeat left center / contain
+  flex-grow: 1
+  flex-basis: 0
+  width: 100%
+
+  img
+    width: 350px
+    border: solid 8px #fff
+    box-shadow: 2px 2px 8px #333
+    display: block
+    margin: 10px auto
+
+    +tablet
+      width: 320px
+
+    +desktop
+      width: 350px
