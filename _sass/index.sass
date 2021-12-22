@@ -236,15 +236,19 @@ a
     font-weight: bold
     color: $primary-color
 
-  .photos-row
-    display: flex
-    align-items: center
+  #photos-grid
+    display: grid
+    grid-template-columns: auto auto
+    grid-gap: 16px
 
-    li
-      flex-grow: 1
-      flex-basis: 0
-      padding: 12px
+    +tablet
+      grid-template-columns: auto auto auto auto
+      grid-gap: 24px
 
     img
-      border: solid 5px #fff
+      display: block
+      border: solid 3px #fff
       box-shadow: 1px 1px 8px #333
+
+      +tablet
+        border-width: 5px
